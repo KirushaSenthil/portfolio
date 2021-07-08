@@ -1,0 +1,158 @@
+h2{
+    
+    color: white;
+  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+
+}
+a{
+    text-decoration: none;
+}
+
+.header{
+    /*background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));*/
+    display:flex;
+    justify-content:space-around;
+    align-items: center;
+    border-radius: 60px;
+}
+.menu{
+    display: flex;
+    justify-content: space-around;
+}
+.projects{
+    display:flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.trex,.balloon,.birds,.brick,.monkey,.car{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 500px;
+    background: rgb(63,94,251);
+background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+border-style: solid;
+border-radius: 30px;
+margin: 20px;
+padding: 10px;
+box-shadow: 10px 10px grey;
+
+}
+.footer{
+    display: flex;
+    justify-content: flex-end;
+}
+/*.balloon{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 500px;  
+}
+.birds{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 500px;
+}
+.brick{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 500px;
+}
+.monkey{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 500px;
+}
+.car{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 500px;
+}*/
+body{
+    /*background: rgb(238,174,202);
+background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);*/
+background: url(bg.jpg) no-repeat center fixed; 
+  background-size: cover;
+}
+img{
+    border-radius: 40px;
+    border: solid;
+    border-width: 5px;
+    border-color: crimson;
+}
+/*.header *{
+    border: solid;
+}*/
+.header a{
+    margin-right: 20px;
+    padding: 10px;
+}
+a:link{
+    color: palevioletred;
+}
+a:visited{
+    color: gold;
+}
+/*a:hover{
+    color: green;
+    background-color: brown;
+}*/
+.trex,.balloon,.car,.brick,.birds,.monkey{
+    position: relative;
+}
+.trex h2,.balloon h2,.birds h2,.brick h2,.car h2,.monkey h2{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    opacity: 0;
+}
+.trex:hover h2{
+    opacity: 1;
+}
+.trex:hover img{
+    opacity: 0.33;
+    transform: scale(0.5);
+}
+.balloon:hover h2{
+    opacity: 1;
+}
+.balloon:hover img{
+    opacity: 0.33;
+    transform: scale(1.2);
+}
+.birds:hover h2{
+    opacity: 1;
+}
+.birds:hover img{
+    opacity: 0.33;
+    transform: scale(1.2);
+}
+.brick:hover h2{
+    opacity: 1;
+}
+.brick:hover img{
+    opacity: 0.33;
+    transform: scale(1.2);
+}
+.car:hover h2{
+    opacity: 1;
+}
+.car:hover img{
+    opacity: 0.33;
+    transform: scale(1.2);
+}
+.monkey:hover h2{
+    opacity: 1;
+}
+.monkey:hover img{
+    opacity: 0.33;
+    transform: scale(1.2);
+}
+
+
+
